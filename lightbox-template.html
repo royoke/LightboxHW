@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<link rel='stylesheet' href="CSS/lightbox.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+	<title>Lightbox</title>
+</head>
+<body>
+	<header>
+		<h1> Stark Family </h1>
+	</header>
+
+	<nav>
+    <div class="controls">
+			<button type="button" class="control" data-filter="all">All</button>
+			<button type="button" class="control" data-filter=".alive">Alive</button>
+			<button type="button" class="control" data-filter=".dead">Dead</button>
+	</div>
+	</nav>
+
+	<main>
+	<div class = "gallery container">
+		<a href="images/ned_stark.jpeg" data-lightbox='starks' data-title="Edard Stark" class="mix dead"><img src="images/ned_stark.jpeg" alt='An image of Ned Stark, the father of the Stark Family'></a>
+		<a href="images/catelyn-stark.jpeg" data-lightbox='starks' data-title="Catelyn Stark" class="mix dead"><img src='images/catelyn-stark.jpeg' alt='An image of Catelyn Stark, the mother of the Stark Family'></a>
+		<a href="images/robb_stark.jpeg" data-lightbox='starks' data-title="Robb Stark" class="mix dead"><img src="images/robb_stark.jpeg" alt="An image of Robb Stark, the eldest son in the Stark Family"></a>
+		<a href="images/jon_snow.jpeg" data-lightbox='starks' data-title="Jon Snow" class="mix alive"><img src="images/jon_snow.jpeg" alt="An image of Jon Snow, Ned Stark's bastard son"></a>
+		<a href="images/sansa_stark.jpeg" data-lightbox='starks' data-title="Sansa Stark" class="mix alive"><img src="images/sansa_stark.jpeg" alt='An image of Sansa Stark, the eldest daughter of the Stark Family'></a>
+		<a href="images/bran_stark.jpeg" data-lightbox='starks' data-title="Brandon Stark" class="mix alive"><img src="images/bran_stark.jpeg" alt='An image of Brandon Stark, the middle son of the Stark Family'></a>
+		<a href="images/arya_stark.jpeg" data-lightbox='starks' data-title="Arya Stark" class="mix alive"><img src="images/arya_stark.jpeg" alt='An image of Arya Stark, the youngest daughter of the Stark Family'></a>
+		<a href="images/rickon_stark.jpeg" data-lightbox='starks' data-title="Rickon Stark" class="mix dead"><img src="images/rickon_stark.jpeg" alt='An image of Rickon Stark, the youngest son of the Stark Family'></a>
+		<a href="images/theon-greyjoy.jpeg" data-lightbox='starks' data-title="Theon Greyjoy" class="mix alive"><img src="images/theon-greyjoy.jpeg" alt='An image of Theon Greyjoy, House Starks Ward and family friend'></a>
+	</div>
+	</main>
+
+	<script src="JS/lightbox.js"></script>
+	<script src="JS/mixitup.js"></script>
+	<script>
+        var containerEl = document.querySelector('.container');
+        var mixer = mixitup(containerEl);
+	</script>
+</body>
+</html>
